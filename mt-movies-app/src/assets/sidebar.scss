@@ -1,0 +1,72 @@
+#sidebar-wrapper{
+    min-height: 100vh !important;
+}
+
+.sidebar{
+    background-color: $sidebar-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .profile-picture{
+        height: $sidebar-photo-height;
+        width: $sidebar-photo-width;
+        min-height: $sidebar-photo-height;
+        max-width: 100%;
+
+        @if $sidebar-photo-is-round {
+            border-radius: $sidebar-photo-width / 2;
+        }
+
+        /* Breakpoint MD */
+        @media (min-width: 768px) and (max-width: 1199px)
+        {
+            height: $sidebar-photo-height / 2;
+            width: $sidebar-photo-width / 2;
+            min-height: $sidebar-photo-height / 2;
+            max-width: 100%;
+
+            @if $sidebar-photo-is-round {
+                border-radius: $sidebar-photo-width / 4;
+            }
+        }
+
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    }
+
+    .sidebarNavLink{
+        text-align: left;
+        padding-left: 2.5rem;
+
+       /* Breakpoint MD */
+        @media (min-width: 768px) and (max-width: 1199px)
+        {
+            text-align: center;
+
+            .sidebarNavLinkName{
+                display: none;
+            }
+        }
+        
+        /* Breakpoint MD */
+        @media (min-width: 1199px) and (max-width: 1600px)
+        {
+            padding: 0;
+        }
+    }
+
+    .nav-item{
+        a.nav-link{
+            color: $sidebar-link-non-active-text-color;
+
+            &.active{
+                color: $sidebar-link-active-text-color;
+            }
+        }
+
+    }
+}

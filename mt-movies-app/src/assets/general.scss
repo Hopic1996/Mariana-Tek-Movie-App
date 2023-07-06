@@ -1,0 +1,1505 @@
+@media only screen and (min-width: 768px){
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        position: absolute;
+        width: 100%;
+        top: -2px;
+        left: auto;
+        right: 107%;
+        text-align: right;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .vertical-timeline-element-icon{
+        display: none;
+    }
+
+    .vertical-timeline-element-content{
+        margin-left: 0;
+    }
+}
+
+.vertical-timeline::before{
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.11);
+}
+
+.vertical-timeline-element{
+    margin: 2em 0;
+}
+
+.vertical-timeline-element-content{
+    box-shadow: none;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    font-weight: 700;
+    font-size: $h6-font-size;
+    margin-top: 0;
+    padding-top: 0.8rem;
+}
+
+.vertical-timeline-element-icon{
+    background-color: $primary;
+    color: white;
+
+    .fa-calendar{
+        width: 24px;
+    }
+}
+
+.content-area{
+    padding: 2.5rem 0em;
+}
+
+.navbar-user-img{
+    height: 1.7em;
+    border-radius: 1em;
+}
+
+.navbar-brand-img{
+    height: 1.7em;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.top-navbar{
+    box-shadow: 0px 0px 8px 0px rgba(128,128,128,0.75);
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(128,128,128,0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(128,128,128,0.75);
+    z-index: 4;
+    
+    .notification-badge{
+        position: absolute;
+        top: 0px;
+        right: -0.5rem;
+    }
+}
+
+.active-notification{
+    border-radius: 0.3rem;
+}
+
+.notification-menu .dropdown-menu{
+  min-width: 330px;
+  background-color: #fff;
+  max-height: 360px;
+  padding: 0;
+}
+.notification-menu .dropdown-menu .drop-content {
+  min-height: 280px;
+  max-height: 280px;
+  overflow-y: scroll;
+}
+.notification-menu .dropdown-menu .drop-content > li {
+  border-bottom: 1px solid #e2e2e2;
+}
+.notification-view-all{
+    border-top: 1px solid #e2e2e2;
+}
+.notification-menu .dropdown-menu .drop-content > li:hover {
+  background-color: #fcfcfc;
+}
+.notification-menu .dropdown-menu .drop-content > li a {
+  font-size: 0.80em;
+}
+
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
+.w-10-rem{
+    min-width: 6rem;
+}
+.w-4-rem{
+    min-width: 4rem;
+    margin-top: -3px;
+}
+.filter-select__control,
+.filter-select__control--is-focused{
+    border-color:'transparent' !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.filter-select__menu{
+    width: 5rem;
+}
+
+.vertical-timeline{
+    padding:0;
+}
+
+.vertical-timeline-element{
+    margin: 0;
+}
+
+.card-top-right-time{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+}
+
+
+.card-top-left-icon{
+    padding: 0.3rem;
+    font-size: 0.7rem;
+
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    color: white;
+
+    &.card-icon-visit{
+        background-color: $cardIconVisit;
+    }
+    &.card-icon-hospitalization{
+        background-color:  $cardIconHospitalization;
+    }
+    &.card-icon-medicine{
+        background-color:  $cardIconMedicine;
+    }
+    &.card-icon-lab-report{
+        background-color:  $cardLabReport;
+    }
+    &.card-icon-surgery{
+        background-color: $cardIconSurgery;
+    }
+    &.card-icon-radiology{
+        background-color:  $cardIconRadiology;
+    }
+    &.card-icon-other{
+        background-color: "#000";
+    }
+}
+
+
+.card-with-shadow{
+    box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.10);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.10);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.10);
+        transition: box-shadow 0.50s;
+
+    &:hover{
+        box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+    }
+}
+
+.height-3{
+    height: 3rem!important;
+}
+
+.report-image{
+    .report-image-icon{
+        width: 2rem;
+    }
+}
+.app-top-sidebar{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 108%;
+    height: 100%;
+    width: 100%;
+    background:white;
+    z-index: 10;
+    transition: all 1s; 
+    
+
+    box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+
+    /* Breakpoint SM */
+    @media (max-width: 767px)
+    {
+        width: 100% !important;
+
+        &.open{
+            left: 0% !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px)
+    {
+        width: 80% !important;
+
+        &.open{
+            left: 20% !important;
+           
+        }
+
+    }
+}
+.app-top-sidebar.top{
+    position:fixed;
+    top: -101%;    
+    left: 65%; 
+    @media (max-width: 767px)
+    {
+       
+        left: 0% !important;
+       
+    }
+    @media (min-width: 768px) and (max-width: 991px)
+    {
+        width: 100% !important;
+       
+        left: 0% !important;
+       
+    }
+    @media (min-width: 992px) and (max-width: 1199px)
+{
+    left: 35% !important;
+    width: 65% !important;
+    z-index: 11;
+    
+}
+
+}
+.app-right-sidebar{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 108%;
+    background:white;
+    z-index: 10;
+    transition: left 1s; 
+
+    box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+
+    /* Breakpoint SM */
+    @media (max-width: 767px)
+    {
+        width: 100% !important;
+
+        &.open{
+            left: 0% !important;
+            
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px)
+    {
+        width: 80% !important;
+
+        &.open{
+            left: 20% !important;
+           
+        }
+
+    }
+}
+.child::-webkit-scrollbar{
+    overflow-y:hidden;
+}
+.app-left-sidebar{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    right: 108%;
+    background:white;
+    z-index: 10;
+    transition: right 1s; 
+
+    box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(128,128,128,0.30);
+
+    /* Breakpoint SM */
+    @media (max-width: 767px)
+    {
+        width: 100% !important;
+
+        &.open{
+            right: 0% !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px)
+    {
+        width: 80% !important;
+
+        &.open{
+            right: 20% !important;
+        }
+
+    }
+}
+
+.action-sidebar{
+    width: 28%;
+
+    &.open{
+        right: 72%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px)
+    {
+        width: 50%;
+
+        &.open{
+            right: 50%;
+        }
+    }
+}
+
+.big-action-sidebar{
+    width: 50%;
+
+    &.open{
+        right: 50%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px)
+    {
+        width: 60%;
+
+        &.open{
+            right: 40%;
+        }
+    }
+}
+
+
+.description-sidebar{
+    width: 50%;
+
+    &.open{
+        left: 50%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px)
+    {
+        width: 60%;
+
+        &.open{
+            left: 40%;
+        }
+    }
+
+    .description-card{
+        border: none;
+        background: transparent;
+
+        .card-header{
+            background: transparent;
+            border-bottom: 1px solid lightgray;
+            font-weight: 800;
+            padding-left: 0;
+            font-size: $h5-font-size;
+        }
+
+        .card-body{
+            padding-left: 0;
+        }
+    }
+}
+
+.reminder-sidebar{
+    width: 30%;
+
+    &.open{
+        left: 70%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px)
+    {
+        width: 60%;
+
+        &.open{
+            left: 40%;
+        }
+    }
+}
+
+.notification-sidebarTop{
+    width: 35%;
+    z-index: 3;
+    
+    &.open{
+        top: 100%;
+        margin-top: 4em; 
+        transform: translate(0, -100%);
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px)
+    {
+        width: 50%;
+
+        &.open{
+            left:50%;
+            top: 100%; 
+            transform: translate(0, -100%);
+        }
+    }
+}
+.notification-sidebar{
+    width: 35%;
+
+    &.open{
+      left:65%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px)
+    {
+        width: 50%;
+
+        &.open{
+            left:50%;
+        }
+    }
+}
+
+.all-reminder-sidebar{
+    width: 28%;
+
+    &.open{
+      right:72%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px)
+    {
+        width: 50%;
+
+        &.open{
+            right:50%;
+        }
+    }
+}
+
+.lh-0-8{
+    line-height: 0.8rem !important;
+}
+
+.lh-0-9{
+    line-height: 0.9rem !important;
+}
+
+.lh-1{
+    line-height: 2rem !important;
+}
+
+.lh-2{
+    line-height: 2rem !important;
+}
+
+.btn-sm{
+    line-height: 1;
+}
+
+
+.btn-no-focus-outline{
+    box-shadow: none !important;
+
+    button{
+        box-shadow: none !important;
+    }
+}
+
+
+/*\
+ * Restore Bootstrap 3 "hidden" utility classes.
+\*/
+/* Breakpoint XS */
+@media (max-width: 768px)
+{
+    .vertical-timeline::before{
+        box-shadow: none;
+    }
+
+    .vertical-timeline-element-content{
+        padding-top: 4rem;
+    }
+
+    .vertical-timeline-element-date{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        right: 100%;
+    }
+}
+
+/* Breakpoint XS */
+@media (max-width: 575px)
+{
+    .hidden-xs-down, .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down, 
+    .hidden-xs-up, 
+    .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+    {
+        display: none !important;
+    }
+    .mobile-padding{
+        padding:10px;
+    }
+    .margin-top-mobile{
+        margin-top:15px;
+    }
+    .text-xs-down-center,.text-sm-down-center,.text-md-down-center
+    {
+        text-align: center !important;
+    }
+
+    .text-xs-down-right,.text-sm-down-right,.text-md-down-right
+    {
+        text-align: right !important;
+    }
+
+    .mobile-width-100{
+        width: 100% !important;
+    }
+
+
+    .DateInput{
+        width: 120px;
+    }
+
+    .DateRangePicker{
+        display: block;
+    }
+
+    .DateRangePickerInput{
+        width: 100%;
+    }
+
+    .mobile-pr-0{
+        padding-right: 0;
+        padding: inherit;
+    }
+    .DateRangePickerInput {
+        width: 100%;
+        display: flex;
+    }
+    .DateRangePickerInput_arrow {
+        display: inline-block;
+        vertical-align: middle;
+        color: #484848;
+        margin-top: 8px;
+    }
+    .login{
+        position: relative;
+    }
+    .auth-body{
+        background: url("https://image.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg");
+        max-width: 100%;
+        max-height: 100%;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        overflow: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    .form{
+        position: absolute;
+        width: 87%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,13%);
+        background-color: white;
+        padding: 10px;
+    }
+    .form2{
+        width: 60%;
+        height: 20;
+        top: 50%;
+        left: 50%;
+        transform: translate(37%, 90%);
+        background-color: white;
+        padding: 20px;
+    }
+    .loginheading{
+        margin-top:-66px;
+        background-color: #007bff;
+    }
+    .search {
+        position: relative;
+        color: black;
+        font-size: 16px;
+      }
+      
+      .form-rounded {
+        border-radius: 0.7rem;
+        }
+    .font{
+        font-size: 103%;
+        margin:17px;
+    }
+    .button{
+        width:100%;
+        height: 46px;
+    }
+}
+
+/* Breakpoint SM */
+@media (min-width: 576px) and (max-width: 767px)
+{
+    .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down, 
+    .hidden-xs-up, .hidden-sm-up, 
+    .hidden-unless-xs, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+    {
+        display: none !important;
+    } 
+    .mobile-padding{
+        padding:10px;
+    }
+    .margin-top-mobile{
+        margin-top:15px;
+    }
+    .text-sm-down-center,.text-md-down-center
+    {
+        text-align: center !important;
+    }
+
+    .text-sm-down-right,.text-md-down-right
+    {
+        text-align: right !important;
+    }
+
+    .mobile-width-100{
+        width: 100% !important;
+    }
+
+    .DateInput{
+        width: 120px;
+    }
+
+    .DateRangePicker{
+        display: block;
+    }
+
+    .DateRangePickerInput{
+        width: 100%;
+    }
+
+    .mobile-pr-0{
+        padding-right: 0;
+    }
+    .DateRangePickerInput {
+        width: 100%;
+        display: flex;
+    }
+    .DateRangePickerInput_arrow {
+        display: inline-block;
+        vertical-align: middle;
+        color: #484848;
+        margin-top: 8px;
+    }
+    .login{
+        position: relative;
+    }
+    .auth-body{
+        background: url("https://image.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg");
+        max-width: 100%;
+        max-height: 100%;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        overflow: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .form2{
+        width: 30%;
+        height: 20;
+        top: 50%;
+        left: 50%;
+        transform: translate(120%, 100%);
+        background-color: white;
+        padding: 20px;
+    }
+    .form{
+        position: absolute;
+        width: 87%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,47%);
+        background-color: white;
+        padding: 45px;
+    }
+    .search {
+        position: relative;
+        color: black;
+        font-size: 16px;
+      }
+      
+      .form-rounded {
+        border-radius: 0.7rem;
+        }
+    .font{
+        font-size: 103%;
+        margin:17px;
+    }
+    .button{
+        width:100%;
+        height: 46px;
+    }
+}
+
+/* Breakpoint MD */
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .hidden-md-down, .hidden-lg-down, .hidden-xl-down, 
+    .hidden-xs-up, .hidden-sm-up, .hidden-md-up, 
+    .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-lg, .hidden-unless-xl
+    {
+        display: none !important;
+    } 
+    .mobile-padding{
+        padding:10px;
+    }
+    .margin-top-mobile{
+        margin-top:15px;
+    }
+
+    .text-md-down-center
+    {
+        text-align: center !important;
+    }
+    .w-input{
+        width: 94% !important;
+    }
+    .DateRangePickerInput_arrow {
+        display: inline-block;
+        vertical-align: middle;
+        color: #484848;
+        margin-top: 8px;
+    }
+    .DateRangePickerInput {
+        width: 74%;
+        display: flex;
+    }
+    .login{
+        position: relative;
+    }
+    .auth-body{
+        background: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-13589,resizemode-1,msid-50693693/wealth/insure/how-to-shift-group-medical-cover-to-personal-policy.jpg");
+        bottom: 0;
+        min-height: 983px;
+        left: 0;
+        position: absolute;
+    right: 0;
+    top: 0;
+    background-position: cover;
+    background-size: initial;
+      }
+    .mobile-padding{
+        margin-right:15px;
+    }
+    .form{
+        width: 72%;
+    top: 50%;
+    left: 50%;
+    height: 800px;
+    transform: translate(20%, 15%);
+    background-color: white;
+    padding: 20px;
+    }
+    .form2{
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(36%, 100%);
+        background-color: white;
+        padding: 20px;
+    }
+    .loginheading{
+        margin-top:-66px;
+        background-color: #007bff;
+    }
+    .search {
+        position: relative;
+        color: black;
+        font-size: 16px;
+      }
+      
+      .form-rounded {
+        border-radius: 0.7rem;
+        }
+    .font{
+        font-size: 103%;
+        margin:17px;
+    }
+    .button{
+        width:100%;
+        height: 46px;
+    }
+}
+
+/* Breakpoint LG */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .hidden-lg-down, .hidden-xl-down, 
+    .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, 
+    .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-xl
+    {
+        display: none !important;
+    } 
+    .mobile-padding{
+        padding:10px;
+    }
+    .margin-top-mobile{
+        margin-top:15px;
+    }
+    .text-lg-down-center
+    {
+        text-align: center !important;
+    }
+    .w-input {
+        width: 85% !important;
+    }
+    .DateRangePickerInput_arrow {
+        display: inline-block;
+        vertical-align: middle;
+        color: #484848;
+        margin-top: 8px;
+    }
+    .DateRangePickerInput {
+        width: 100%;
+        display: flex;
+    }
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        margin-right: 2%;
+    }
+   
+    .login{
+        position: relative;
+    }
+    .auth-body{
+        background: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-13589,resizemode-1,msid-50693693/wealth/insure/how-to-shift-group-medical-cover-to-personal-policy.jpg");
+        bottom: 0;
+        min-height: 983px;
+        left: 0;
+        position: absolute;
+    right: 0;
+    top: 0;
+    background-position: cover;
+    background-size: initial;
+      }
+    .form{
+        width: 72%;
+    top: 50%;
+    left: 50%;
+    height: 800px;
+    transform: translate(20%, 15%);
+    background-color: white;
+    padding: 20px;
+    }
+    .form2{
+        width: 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(36%, 100%);
+        background-color: white;
+        padding: 20px;
+    }
+    .loginheading{
+        margin-top:-66px;
+        background-color: #007bff;
+    }
+    
+    .search {
+        position: relative;
+        color: black;
+        font-size: 16px;
+      }
+      
+      .form-rounded {
+        border-radius: 0.7rem;
+        }
+    .font{
+        font-size: 103%;
+        margin:17px;
+    }
+    .button{
+        width:100%;
+        height: 46px;
+    }
+
+}
+
+/* Breakpoint XL */
+@media (min-width: 1200px)
+{
+    .hidden-xl-down, 
+    .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up, 
+    .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg
+    {
+        display: none !important;
+    } 
+    .DateRangePickerInput_arrow {
+        display: inline-block;
+        vertical-align: middle;
+        color: #484848;
+        margin-top: -4px;
+    }
+    .col{
+        padding: 2%;
+    }
+}
+
+@mixin isDesktop() {
+    @media (min-width: 768px)
+    {
+        @content;
+    }
+}
+
+@mixin isMobile() {
+    @media (max-width: 767px)
+    {
+        @content ; 
+    }
+}
+
+@include isDesktop(){
+    .d-align-middle{
+        vertical-align: middle !important;
+    }
+    .d-position-fixed{
+        position: fixed !important;
+    }
+
+    .copy-right-section{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+
+
+
+@include isMobile(){
+    .m-pt-5{
+        padding-top: 3rem;
+    }
+
+    .login{
+        display: block !important;
+    }
+
+    p.or{
+        margin-bottom: 0;
+    }
+
+    .copy-right-section{
+        margin-top: 3rem;
+    }
+}
+
+
+
+.card-top-left-icon.card-icon-injection {
+    background-color: #0d6efd;
+}
+.card-top-left-icon.card-icon-tablet {
+    background-color: #0dcaf0;
+}
+.card-top-left-icon.card-icon-drops {
+    background-color: #ffc107;
+}
+
+.medicine-card{
+    @media (max-width: 767px)
+    {
+        text-align: center;
+
+        .medicine-title-container{
+            margin-top: 1.5rem;
+        }
+
+        .medicine-btn{
+            position: absolute;
+            top: 0.5rem;
+            right: 0;
+        }
+    }
+}
+
+.dateTimeLabel {
+display:none;
+}
+input#DateTimeInput_start {
+display:none;
+}
+input#DateTimeInput_end {
+display:none;
+}
+
+.channel-checkbox{
+    label{
+        margin-top: 0.2rem;
+    }
+}
+.w-10-rem {
+    min-width: 6rem;
+}
+.react-pdf__message react-pdf__message--loading{
+    text-align: center;
+}
+
+.vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 1px;
+}
+.vertical-timeline-element-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow:none;
+}
+.size{
+    font-size:15px;
+}
+
+.calendar{
+    margin-left:-12px;
+}
+
+.text-muted.pt-3.card-footer{
+    padding: .75rem 1.25rem;
+    backgroung-color:white !important;
+}
+.myDatePicker {   
+  width: 100%;  
+}
+/* Breakpoint XL */
+@media (min-width: 1200px)
+{
+    .width {
+        width: 450px;
+    }
+    .prescribed-width{
+        width: 450px;
+    }
+    .w-input {
+        width: 46% !important;
+    }
+    .login{
+        position: relative;
+    }
+    body{
+        height: 100%;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .auth-body{
+        background: url("https://img.etimg.com/thumb/width-1200,height-900,imgsize-13589,resizemode-1,msid-50693693/wealth/insure/how-to-shift-group-medical-cover-to-personal-policy.jpg");
+        bottom: 0;
+        min-height: 885px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.7;
+        background-size: cover;
+      }
+      .main-form{
+        height: 64vh;
+      }
+      .cp-text{ color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);}
+        /* custom scrollbar */
+        .responsive{
+            background-color: #fdfdfd;
+            border-radius: 6px;
+            box-shadow: 0 4px 28px rgba(123,151,158,.25);
+            border: 1px solid #d6dee1;
+            padding: 1rem;
+            overflow: scroll;
+        }
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        .react-responsive-modal-modal {
+            width:35%;
+            height: 750px;
+            text-align: center;
+        }
+        .copy-col-height-login{
+            height: 99%;
+            margin-top: 1.1%;
+        }
+        .copy-col-height-forgot{
+            height: 95%;
+            margin-top: 1%;
+        }
+        .copy-col-height-otp{
+            height: 95%;
+            margin-top: 1%;
+        }
+        .copy-col-height{
+            height: 100%;
+        }
+        .copy-col-height-signup{
+            height: 90%;
+        }
+        #top-message {        
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        height: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -8px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        } 
+        ::-webkit-scrollbar-thumb {
+            background-color: #d6dee1;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #a8bbbf;
+        }
+        .margin-icon{
+            margin-left: 19px;
+        }
+        .input-width{
+            width: 302px;
+        }
+      .wp-caption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        }
+      .wp-caption:after {
+        content: "";
+        left: 0;
+        font-size: xx-large;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        }
+        .wp-caption-text {
+        color: #fff;
+        font-size: xx-large;
+        left: 0;
+        bottom: 0;
+        padding: 1em;
+        font-weight: 700;
+        z-index: 2;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+    .form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+    }
+    .form-signup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 0;
+    }
+    .remember input{
+        margin-top: revert;
+    }
+    .formforgot{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin-top: 30%;
+    }
+    .loginheading{
+        margin-top:-66px;
+        background-color: #007bff;
+    }
+    .search {
+        position: relative;
+        color: black;
+        font-size: 16px;
+      }
+      
+      .form-rounded {
+        border-radius: 0.7rem;
+        }
+    .font{
+        font-size: 103%;
+        margin:17px;
+    }
+    .button{
+        width:100%;
+        height: 46px;
+    }
+    .content {
+        margin: 10px auto;
+        width: 100%;
+      }
+      
+      .or {
+        background-image: linear-gradient(
+            45deg
+            , rgba(149, 145, 145, 0.582), transparent),linear-gradient(
+                -30deg
+                , rgba(149, 145, 145, 0.582), transparent);
+        text-align: center;
+        font-size: 15px;
+        background-size: 50% 0.1rem;
+        background-position:center left,center right;
+        background-repeat:no-repeat;
+      }
+}
+
+
+    .d-block {
+        display: block !important;
+    }
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        margin-right: 2%;
+    }
+
+.card.description-card.description-card1.d-block.w-100 {
+    border: none;
+    margin: -14px 0px 0px 0px;
+}
+.card-body.text-nowrap.margin-top {
+    margin: -12px 0px 0px 0px;
+}
+.card.description-card.description-card2.d-block.w-100{
+    border: none;
+    margin: -40px 0px 0px 0px;
+}
+
+.card.description-card.description-card3.d-block.w-100{
+    border: none;
+    margin: -30px 0px 0px 0px;
+}
+
+.card-header.card-prescription {
+    background: transparent;
+    border: none;
+    background: bottom;
+    border-bottom: 1px solid lightgray;
+    font-weight: 800;
+    padding-left: 0;
+    font-size: 1.25rem;
+}
+svg#PopoverLegacy1 {
+    font-size: x-small;
+}
+svg#PopoverLegacy {
+    font-size: x-small;
+}
+
+.blue{
+    color:#0d6efd;
+}
+.light-blue{
+    color:#0dcaf0;
+}
+.green{
+    color:#198754;
+}
+.sliver{
+    color:#6c757d;
+}
+.red{
+    color:#dc3545;
+}
+.yellow{
+    color:#ffc107;;
+}
+
+@media print {
+  .print-source {
+    display:none;
+  }
+}
+
+.background{
+    background:black;
+}
+.height{    
+height: 47px;
+}
+
+
+.DayPickerNavigation_button.DayPickerNavigation_button_1.DayPickerNavigation_button__default.DayPickerNavigation_button__default_2.DayPickerNavigation_button__horizontal.DayPickerNavigation_button__horizontal_3.DayPickerNavigation_button__horizontalDefault.DayPickerNavigation_button__horizontalDefault_4.DayPickerNavigation_leftButton__horizontalDefault.DayPickerNavigation_leftButton__horizontalDefault_5 {
+   
+    margin-left: -19px;
+    padding: 6px;
+}
+
+.DayPickerNavigation_button.DayPickerNavigation_button_1.DayPickerNavigation_button__default.DayPickerNavigation_button__default_2.DayPickerNavigation_button__horizontal.DayPickerNavigation_button__horizontal_3.DayPickerNavigation_button__horizontalDefault.DayPickerNavigation_button__horizontalDefault_4.DayPickerNavigation_rightButton__horizontalDefault.DayPickerNavigation_rightButton__horizontalDefault_5 {
+    margin-right: -19px;
+    padding: 6px;
+}
+
+input#endDate {
+    width: 111%;
+}
+
+.card-bottom-left{
+    padding: 0.3rem;
+
+    position: absolute;
+    top: 176px;
+    left: 1rem;
+    color: black;
+}
+
+.footerstyle.card-footer {
+    background: bottom;
+    border-top:none;
+}
+
+small.mt-2.font {
+    font-size: 12px;
+}
+
+
+body.non-scroll {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    
+}
+body.non-scroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.z-index-5{
+    z-index: 10 !important;
+}
+
+.z-index-5{
+    z-index: 5 !important;
+}
+
+
+dd{
+    white-space: normal;
+}
+
+
+.fb-btn{
+    background-color: #1877f2;
+    color: white;
+
+    &:hover{
+    background-color: #166fe5;
+    color: white;  
+    }
+
+    .social-login-icon-divider{
+        border-right: 0.5px solid white;
+    }
+}
+
+
+.social-login-btn{
+    padding-left: 4rem;
+}
+
+.social-login-icon-divider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    width: 3rem;
+}
+
+
+.position-absolute-bottom{
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.search .fa-search{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.react-datepicker-wrapper input.form-control{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+}
+
+.add-button{
+    height: 39px;
+}
+.badges-removed{
+    border-radius: 2px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.react-datepicker-popper{
+    z-index: 10000;
+}
+
+.input-group > .react-datepicker-wrapper{
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+.membership-image{
+    height:100px;
+    width:auto;
+}
+.rcw-conversation-container > .rcw-header {
+    background-color: #0257d5;
+  }
+.rcw-launcher {
+    background: #0257d5;
+}
+  .rcw-message > .rcw-response {
+    background-color: #0257d5;
+    color: white;
+  }
+

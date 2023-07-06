@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  margin: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.movie {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.movie img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+select {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-item {
+    margin-right: 10px;
+}
+
+.movie {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.poster {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.details {
+    flex: 1 1 auto;
+}

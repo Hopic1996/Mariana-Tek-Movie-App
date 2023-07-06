@@ -1,0 +1,116 @@
+$sidebar-photo-height: 10em;
+$sidebar-photo-width: 10em;
+$sidebar-photo-is-round: true;
+$sidebar-color: lightgrey;
+$sidebar-link-active-text-color: gray;
+$sidebar-link-non-active-text-color: black;
+$navbar-color: #f8f9fa;
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-600: #6c757d !default;
+$gray-900: #212529 !default;
+
+$blue:    #0d6efd !default;
+$red:     #dc3545 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$cyan:    #0dcaf0 !default;
+
+$link-shade-percentage:       20% !default;
+$variable-prefix:             bs- !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+
+$cardIconVisit:$primary;
+$cardIconHospitalization: $danger;
+$cardIconMedicine: $info;
+$cardLabReport: $secondary;
+$cardIconSurgery: $warning;
+$cardIconRadiology: $success;
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url(./fonts/Lato-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  src: local('Lato'), url(./fonts/Lato-Bold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Nexa';
+  font-weight: 900;
+  src: local('Nexa'), url(./fonts/Nexa-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: local('Nexa'), url(./fonts/Nexa-Regular.otf) format('opentype');
+}
+
+// Primary Blue #0d6efd
+// Secondary Gray #6c757d
+// success green #6c757d
+// info cyan #0dcaf0
+// warning yellow #ffc107
+// danger red #dc3545
+// light gray #f8f9fa
+// dark gray #212529
+// Body Background Color white
+// Default Font Color 212529
+// Muted Text Color #6c757d
+// Link Color Blue #0d6efd
+// Default Font Family "system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji""
+// Default Font Family "system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji""
+// Default Font Size 1 em
+// Header 1 Size -> Default fontsize * 2.5
+// Header 2 Size -> Default fontsize * 2.0
+// Header 3 Size -> Default fontsize * 1.75
+// Header 4 Size -> Default fontsize * 1.5
+// Header 5 Size -> Default fontsize * 1.25
+// Header 6 Size -> Default fontsize
+
+$body-bg:                   $white !default;
+$body-color:                $gray-900 !default;
+
+$link-color:                $primary !default;
+$link-hover-color:          shift-color($link-color, $link-shade-percentage) !default;
+
+$font-family-sans-serif:      Nexa, sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+) !default;
+
+$text-muted:                  $gray-600 !default;
