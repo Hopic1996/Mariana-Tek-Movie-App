@@ -2,7 +2,7 @@
 
 The Movie Listing App is a web application that allows users to browse and search for movies. Users can filter movies by genre and search for specific movie titles. The app provides detailed information about each movie, including its title, genre, rating, release year, and more.
 
-![Movie Listing App Screenshot](Screenshot from 2023-07-06 10-02-16.png)
+![Movie Listing App Screenshot](https://github.com/Hopic1996/Mariana-Tek-Movie-App/blob/88f09f948349fb3207caa3700956ba424e1aa5ab/Screenshot%20from%202023-07-06%2010-02-16.png)
 
 ## Features
 
